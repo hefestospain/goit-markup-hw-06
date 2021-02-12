@@ -60,7 +60,7 @@
         <!--Our strengths-->
         <section class="strengths">
             <div class="container">
-                <h2 class="strengths-title">Наши сильные стороны</h2>
+                <h2 class="strengths-title visually-hidden">Наши сильные стороны</h2>
                 <ul class="strengths-list list">
                     <li class="str-list-item">
                         <div class="strengths-image">
@@ -338,6 +338,8 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-container">
+
+                <!-- LEFT FOOTER/ADDRESS -->
                 <div class="footer-left">
                     <!--ссылка на главную страничку -->
                     <a class="main-link link" lang="en" href="./index.html"><span class="web">Web</span><span class="studio-footer">Studio</span></a>
@@ -356,6 +358,8 @@
                         </ul>
                     </address>
                 </div>
+
+                <!-- CENTER FOOTER/SOCIAL LIST-LINKS -->
                 <div class="footer-center">
                     <p class="footer-title">присоединяйтесь</p>
                     <ul class="social-list list">
@@ -389,6 +393,20 @@
                         </li>
                     </ul>
                 </div>
+
+                <!-- RIGHT-FOOTER/SUBSCRIPTION -->
+                <div class="footer-right">
+                    <p class="footer-title">Подпишитесь на рассылку</p>
+                    <form class="subscription-form" action="#">
+                        <input class="subscription-email" type="email" name="subscription-email" placeholder="E-mail">
+                        <button class="subscription-btn-submit" type="submit">
+                            <span class="sb-btn-submit-title">Подписаться</span> 
+                            <svg class="subscription-send-icon">
+                                <use href="./images/sprite.svg#send-icon"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
             </div>
         </div>
     </footer>
@@ -400,6 +418,63 @@
                     <use href="./images/sprite.svg#close-btn"></use>
                 </svg>
             </button>
+            <!-- Title of form -->
+            <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+            <!-- FORM-modal window -->
+            <form class="modal-form" action="#">
+
+                <!-- NAME -->
+                <label class="modal-form-input-label">
+                    Имя
+                    <span class="modal-form-input-wrapper">
+                        <input type="text" name="user-name" class="modal-form-input">
+                        <svg class="modal-input-icon">
+                            <use href="./images/sprite.svg#person"></use>
+                        </svg>
+                    </span> 
+                </label>
+
+                <!-- TELEPHONE -->
+                <label class="modal-form-input-label">
+                    Телефон
+                    <span class="modal-form-input-wrapper">
+                        <input type="tel" name="user-telphone" class="modal-form-input">
+                        <svg class="modal-input-icon">
+                            <use href="./images/sprite.svg#phone"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <!-- EMAIL -->
+                <label class="modal-form-input-label">
+                    Почта
+                    <span class="modal-form-input-wrapper">
+                        <input type="email" name="user-email" class="modal-form-input">
+                        <svg class="modal-input-icon">
+                            <use href="./images/sprite.svg#email"></use>
+                        </svg>
+                    </span>
+                </label>
+
+                <!-- COMMENTS -->
+                <label class="modal-form-input-label">
+                    Комментарий
+                    <textarea class="modal-form-message" name="user-message" placeholder="Введите текст"></textarea>
+                </label>
+
+                <!-- POLICY -->
+                <div class="modal-form-policy-wrapper">
+                    <input type="checkbox" id="policy-check" name="user-policy" class="modal-form-check-policy visually-hidden">
+                    <label for="policy-check" class="modal-form-label-policy">
+                        Соглашаюсь с рассылкой и принимаю 
+                        <a href="#">Условия договора</a>
+                    </label>
+                </div>
+                
+
+                <!-- MODAL-FORM-SAUBMIT-BUTTON -->
+                <button type="submit" class="modal-form-btn">Отправить</button>
+            </form>
         </div>
     </div>
 
