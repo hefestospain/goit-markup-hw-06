@@ -825,6 +825,9 @@ img {
     margin-bottom: 30px;
 }
 .modal-form-label-policy {
+    display: flex;
+    align-items: center;
+
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
